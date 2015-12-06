@@ -1,0 +1,5 @@
+parameters:
+	categories: ['category1', 'category2']
+	sample_ralated_filler:
+	    - sample_ralated_filler_1
+	    - sample_ralated_filler_2

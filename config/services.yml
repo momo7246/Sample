@@ -1,0 +1,13 @@
+services:
+    sample_related_filler_1:
+        class: sample\filler\SampleFillerOne
+        arguments:
+            - @service_container
+            - "@=service('guru_common_guru_sdk.developer_property_review_sdk')"
+
+    sample_related_filler_2:
+        class: sample\filler\SampleFillerTwo
+        arguments:
+            - @service_container
+            - "@=service('guru_common_guru_sdk.developer_property_review_sdk')"
+

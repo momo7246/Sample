@@ -1,0 +1,9 @@
+services:
+    guru_property_review_related_articles_widget:
+        class: sample\SampleRelatedWidget
+        arguments:
+            - @templating
+            - "@=service('service_container')"
+        calls:
+            - [setTemplate, ['sample:views:related.html.ms']]
+            - [setConfig, [{region: %region%, locale: "@=service('request_stack').getCurrentRequest().getLocale()", limit: 3}]]
